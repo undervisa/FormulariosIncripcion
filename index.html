@@ -11,7 +11,6 @@
 
     <title>Formulario de Incripción | UndervisaMT</title>
 </head>
-
 <body>
     <div class="row justify-content-center text-white text-center" style="background-color:#020D2B">
         <div class="col-md-2">
@@ -35,7 +34,10 @@
             </div>
             <div class="container">
             <H3><strong>Formulario de Incripción</strong></H3>
-            <form>
+             <form class="description" action="https://my.sendinblue.com/users/subscribe/" method="post" onsubmit="return false">
+
+
+              <!-- <form action="https://facebook.us20.list-manage.com/subscribe/;id=5ee273bdb8"  method="post" class="validate" target="_blank" novalidate>-->
                 <div class="form-row">
                     <div class="col-md-12 row" style="padding-top: 10px;">
                         <div class="col-md-12">
@@ -101,23 +103,83 @@
                             <input type="text" class="form-control" placeholder="@undervisaMT" id="mcE-Twitter">
                         </div>
                     </div>
-                    <div class="col-md-12 row">
+                    <div class="col-md-12" style="padding-top: 20px">
                         <div class="custom-control custom-checkbox">
                           <input type="checkbox" class="custom-control-input" id="customCheck1">
                           <label class="custom-control-label" for="customCheck1">Acepto <a href="http://bit.ly/TyCUndervisa" target="_blank">Termimos y condiciones</a>
                             </label>
                         </div>
                     </div>
-                     <button type="submit" class="btn btn-primary">Submit</button>
+                    <div class="col-md-12" style="padding-top: 20px">
+                         <button type="submit" class="btn btn-primary" id="mc-embedded-subscribe">Enviar</button>
+                    </div>
                 </div>
             </form>
         </div>
     </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+ <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+            <script type='text/javascript'>
+                (function($) {
+                    window.fnames = new Array();
+                    window.ftypes = new Array();
+                    fnames[1] = 'FNAME';
+                    ftypes[1] = 'text';
+                    fnames[2] = 'LNAME';
+                    ftypes[2] = 'text';
+                    fnames[5] = 'CUMPLE';
+                    ftypes[5] = 'birthday';
+                    fnames[0] = 'EMAIL';
+                    ftypes[0] = 'email';
+                    fnames[4] = 'PHONE';
+                    ftypes[4] = 'phone';
+                    fnames[3] = 'PAIS';
+                    ftypes[3] = 'text';
+                    fnames[6] = 'CIUDAD';
+                    ftypes[6] = 'text';
+                    fnames[7] = 'INVITO';
+                    ftypes[7] = 'text';
+                    fnames[8] = 'WHATSAPP';
+                    ftypes[8] = 'number';
+                    fnames[9] = 'INSTAGRAM';
+                    ftypes[9] = 'text';
+                    fnames[10] = 'FACEBOOK';
+                    ftypes[10] = 'text';
+                    fnames[11] = 'TWITTER';
+                    ftypes[11] = 'text';
+                    /*
+                     * Translated default messages for the $ validation plugin.
+                     * Locale: ES
+                     */
+                    $.extend($.validator.messages, {
+                        required: "Este campo es obligatorio.",
+                        remote: "Por favor, rellena este campo.",
+                        email: "Por favor, escribe una dirección de correo válida",
+                        url: "Por favor, escribe una URL válida.",
+                        date: "Por favor, escribe una fecha válida.",
+                        dateISO: "Por favor, escribe una fecha (ISO) válida.",
+                        number: "Por favor, escribe un número entero válido.",
+                        digits: "Por favor, escribe sólo dígitos.",
+                        creditcard: "Por favor, escribe un número de tarjeta válido.",
+                        equalTo: "Por favor, escribe el mismo valor de nuevo.",
+                        accept: "Por favor, escribe un valor con una extensión aceptada.",
+                        maxlength: $.validator.format("Por favor, no escribas más de {0} caracteres."),
+                        minlength: $.validator.format("Por favor, no escribas menos de {0} caracteres."),
+                        rangelength: $.validator.format("Por favor, escribe un valor entre {0} y {1} caracteres."),
+                        range: $.validator.format("Por favor, escribe un valor entre {0} y {1}."),
+                        max: $.validator.format("Por favor, escribe un valor menor o igual a {0}."),
+                        min: $.validator.format("Por favor, escribe un valor mayor o igual a {0}.")
+                    });
+                }(jQuery));
+                var $mcj = jQuery.noConflict(true);
+            </script>
+            <!--End mc_embed_signup-->
+
+
+            <!-- Optional JavaScript -->
+            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 
 </html>
